@@ -1,4 +1,15 @@
 #include <unistd.h>
+#include <stdlib.h>
+
+void	ft_putnbr(int nb)
+{
+	char	result;
+
+	if (nb >= 10)
+		ft_putnbr(nb / 10);
+	result = (nb % 10) + '0';
+	write(1, &result, 1);
+}
 
 int is_prime(int num)
 {
