@@ -19,11 +19,10 @@ int is_prime(int num)
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	int nb = ft_atoi(argv[1]);
-	
 	if (argc == 2)
 	{
+		int sum = 0;
+		int nb = ft_atoi(argv[1]);
 		while (nb > 0)
 			if (is_prime(nb--))
 				sum += (nb + 1);
