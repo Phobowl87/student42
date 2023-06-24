@@ -8,13 +8,13 @@ int main(int argc, char const *argv[])
 	if (argc == 2)
 	{
 		i = 0;
-		while (argv[1][i] == ' ' || argv[1][i] == '\t')
+		while (argv[1][i] == ' ' || argv[1][i] == '\t' || (argv[1][i] >= 9 && argv[1][i] <= 13))
 			i += 1;
 		while (argv[1][i])
 		{
-			if (argv[1][i] == ' ' || argv[1][i] == '\t')
+			if (argv[1][i] == ' ' || argv[1][i] == '\t' || (argv[1][i] >= 9 && argv[1][i] <= 13))
 				flg = 1;
-			if (!(argv[1][i] == ' ' || argv[1][i] == '\t'))
+			if (!(argv[1][i] == ' ' || argv[1][i] == '\t'|| (argv[1][i] >= 9 && argv[1][i] <= 13)))
 			{
 				if (flg)
 					write(1, " ", 1);
