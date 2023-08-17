@@ -8,9 +8,9 @@ void	put_images(t_game *game)
 	game->img.mountain = mlx_xpm_file_to_image(game->mlx, MOUNTAIN, &len, &len);
 	game->img.goku = mlx_xpm_file_to_image(game->mlx, GOKU, &len, &len);
 	game->img.sky = mlx_xpm_file_to_image(game->mlx, SKY, &len, &len);
-	game->img.house = mlx_xpm_file_to_image(game->mlx, HOUSE, &len, &len);
+	game->img.karin_tour = mlx_xpm_file_to_image(game->mlx, KARIN_TOUR, &len, &len);
 	game->img.balls = mlx_xpm_file_to_image(game->mlx, BALLS, &len, &len);
-	game->img.shenron = mlx_xpm_file_to_image(game->mlx, SHENRON, &len, &len);
+	game->img.on_tour = mlx_xpm_file_to_image(game->mlx, ON_TOUR, &len, &len);
 }
 
 void	put_map(int x, int y, char c, t_game *game)
@@ -26,13 +26,13 @@ void	put_map(int x, int y, char c, t_game *game)
 			game->img.goku, x * 64, y * 64);
 	if (c == 'E')
 		mlx_put_image_to_window(game->mlx, game->win,
-			game->img.house, x * 64, y * 64);
+			game->img.karin_tour, x * 64, y * 64);
 	if (c == 'C')
 		mlx_put_image_to_window(game->mlx, game->win,
 			game->img.balls, x * 64, y * 64);
 	if (c == 'B')
 		mlx_put_image_to_window(game->mlx, game->win,
-			game->img.shenron, x * 64, y * 64);
+			game->img.on_tour, x * 64, y * 64);
 }
 
 int	collectible_counter(t_game *game)

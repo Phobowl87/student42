@@ -16,7 +16,7 @@ static int	valid_move(t_game *game, int col, int line, int pressed_key)
 	if (game->map[line][col] == 'E' && game->score == 0)
 	{
 		game->end_game = 1;
-		ft_printf("\n\nTu as les 7 Dragon Balls!!! Quel est ton voeu?!\n\n");
+		ft_printf("\n\nBravo!! Tu as reunis les Dragon Balls!!\n\n");
 		close_window(game);
 	}
 	if (pressed_key != W && pressed_key != S && pressed_key != A

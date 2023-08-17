@@ -11,10 +11,10 @@
 
 # define GOKU "./images/goku.xpm"
 # define BALLS "./images/balls.xpm"
-# define HOUSE "./images/house.xpm"
+# define KARIN_TOUR "./images/karin_tour.xpm"
 # define MOUNTAIN "./images/mountain.xpm"
 # define SKY "./images/sky.xpm"
-# define SHENRON "./images/SHENRON.xpm"
+# define ON_TOUR "./images/on_tour.xpm"
 
 # define W 119
 # define A 97
@@ -28,8 +28,8 @@ typedef struct s_img
 	void	*goku;
 	void	*sky;
 	void	*mountain;
-	void	*house;
-	void	*shenron;
+	void	*karin_tour;
+	void	*on_tour;
 }	t_img;
 
 typedef struct s_game

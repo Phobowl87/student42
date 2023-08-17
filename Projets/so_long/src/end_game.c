@@ -2,7 +2,7 @@
 
 void	free_img(t_game *game)
 {
-	mlx_destroy_image(game->mlx, game->img.house);
+	mlx_destroy_image(game->mlx, game->img.karin_tour);
 	if (game->img.balls)
 		mlx_destroy_image(game->mlx, game->img.balls);
 	if (game->img.goku)
@@ -11,8 +11,8 @@ void	free_img(t_game *game)
 		mlx_destroy_image(game->mlx, game->img.sky);
 	if (game->img.mountain)
 		mlx_destroy_image(game->mlx, game->img.mountain);
-	if (game->img.shenron)
-		mlx_destroy_image(game->mlx, game->img.shenron);
+	if (game->img.on_tour)
+		mlx_destroy_image(game->mlx, game->img.on_tour);
 	mlx_destroy_display(game->mlx);
 	free_map(game);
 	free(game->mlx);
